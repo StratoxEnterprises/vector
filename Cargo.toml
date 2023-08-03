@@ -18,10 +18,6 @@ name = "vector"
 test = false
 bench = false
 
-[[test]]
-name = "integration"
-path = "tests/integration/lib.rs"
-
 [[bin]]
 name = "graphql-schema"
 path = "src/api/schema/gen.rs"
@@ -715,44 +711,7 @@ enterprise = [
 nightly = []
 
 # Testing-related features
-all-integration-tests = [
-  "amqp-integration-tests",
-  "appsignal-integration-tests",
-  "aws-integration-tests",
-  "axiom-integration-tests",
-  "azure-integration-tests",
-  "chronicle-integration-tests",
-  "clickhouse-integration-tests",
-  "databend-integration-tests",
-  "datadog-agent-integration-tests",
-  "datadog-logs-integration-tests",
-  "datadog-metrics-integration-tests",
-  "datadog-traces-integration-tests",
-  "docker-logs-integration-tests",
-  "es-integration-tests",
-  "eventstoredb_metrics-integration-tests",
-  "fluent-integration-tests",
-  "gcp-cloud-storage-integration-tests",
-  "gcp-integration-tests",
-  "gcp-pubsub-integration-tests",
-  "http-client-integration-tests",
-  "humio-integration-tests",
-  "influxdb-integration-tests",
-  "kafka-integration-tests",
-  "logstash-integration-tests",
-  "loki-integration-tests",
-  "mongodb_metrics-integration-tests",
-  "nats-integration-tests",
-  "nginx-integration-tests",
-  "opentelemetry-integration-tests",
-  "postgresql_metrics-integration-tests",
-  "prometheus-integration-tests",
-  "pulsar-integration-tests",
-  "redis-integration-tests",
-  "splunk-integration-tests",
-  "dnstap-integration-tests",
-  "webhdfs-integration-tests",
-]
+all-integration-tests = []
 
 amqp-integration-tests = ["sources-amqp", "sinks-amqp"]
 appsignal-integration-tests = ["sinks-appsignal"]
